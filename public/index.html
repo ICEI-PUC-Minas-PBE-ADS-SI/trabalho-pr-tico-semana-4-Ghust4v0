@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arte Sobre Tela</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <!--Cabeçalho-->
-    <header>
+    <header class="bg-primary bg-gradient">
         <div class="logo">
             <img src="image-removebg-preview.png" width="100px" height="100px">
         </div>
         <nav class="acoes">
-            <button>Login</button>
-            <button>Entrar</button>
+            <button class="rounded p-8 m-1 border-0">Login</button>
+            <button class="rounded p-8 m-1 border-0">Entrar</button>
         </nav>
 
     </header>
@@ -26,33 +29,24 @@
         <center><H1>Susgestoês para você:</H1></center> 
 
     <!--Corpo-->
-    <main>
-        
-        
+    <main class="container float-end d-flex flex-wrap">
 
-        <div class="pes">
-            <section class="busca">
-                <input type="textarea">
-                <img src="lupa.png" width="20px" height="20px" class="lupa">
-            </section>
-        </div>
-
-        <article class="filmes">
-            <section class="filme1">
+        <article class="row m-3">
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="aindaesotuaqui.jpg" alt="">
                 </div>
                 <div class="sobre">
                     <center>
-                        <h2>Ainda Estou Aqui</h2>
+                        <h2 class="fs-3">Ainda Estou Aqui</h2>
                         <b>Diretor:</b> Walter Salles
                     </center>
                 </div>
             </section>
-        </article>
+        
 
-        <article class="filmes">
-            <section class="filme2">
+        
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="conclave.png" alt="">
                 </div>
@@ -63,10 +57,10 @@
                     </center>
                 </div>
             </section>
-        </article>
+        
 
-        <article class="filmes">
-            <section class="filme3">
+        
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="centraldobresil.jpg" alt="">
                 </div>
@@ -77,24 +71,24 @@
                     </center>
                 </div>
             </section>
-        </article>
+        
 
-        <article class="filmes">
-            <section class="filme4">
+        
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="ultimato.jpg" alt="">
                 </div>
                 <div class="sobre">
                     <center>
-                        <h3>Vingadores: Ultimato</h3>
+                        <h3 class="fs-4">Vingadores: Ultimato</h3>
                         <b>Diretor:</b> Anthony Russo
                     </center>
                 </div>
             </section>
-        </article>
+        
 
-        <article class="filmes">
-            <section class="filme5">
+        
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="nós.png" alt="">
                 </div>
@@ -105,24 +99,24 @@
                     </center>
                 </div>
             </section>
-        </article>
+        
 
-        <article class="filmes">
-            <section class="filme6">
+        
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="culpadasestrelas.jpg" alt="">
                 </div>
                 <div class="sobre">
                     <center>
-                        <h3>A Culpa é das Estrelas</h3>
+                        <h3 class="fs-4">A Culpa é das Estrelas</h3>
                         <b>Diretor:</b> Josh Boone
                     </center>
                 </div>
             </section>
-        </article>
+   
 
-        <article class="filmes">
-            <section class="filme7">
+        
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="homemaranha.jpg" alt="">
                 </div>
@@ -131,16 +125,16 @@
                     <b>Diretor:</b> Peter Ramsey
                 </center>
             </section>
-        </article>
+        
 
-        <article class="filmes">
-            <section class="filme8">
+    
+            <section class="col-md-3 col-sm-6 col-6">
                 <div class="post">
                     <img src="O_auto_da_compadecida.jpg" alt="">
                 </div>
                 <div class="sobre">
                     <center>
-                        <h3>Auto da Compadecida</h3>
+                        <h3 class="fs-4">Auto da Compadecida</h3>
                         <b>Diretor:</b> Guel Arraes
                     </center>
                 </div>
@@ -150,70 +144,60 @@
     </main>
 
     <!--Barra Lateral-->
-    <aside>
+    <aside class="d-fixed">
 
         <center>
             <h2>Categorias</h2>
         </center>
 
-        <div class="barralateral">
+        <div class="d-flex flex-wrap w-25">
 
             <section class="categoria">
                 <nav class="acao">
-                    <button>AÇÃO</button>
+                    <button class="rounded p-8 m-1 text-light border-0">AÇÃO</button>
                 </nav>
             </section>
 
             <section class="categoria">
                 <nav class="comedia">
-                    <button>COMEDIA</button>
+                    <button class="rounded p-8 m-1 text-light border-0">COMEDIA</button>
                 </nav>
             </section>
 
             <section class="categoria">
                 <nav class="romance">
-                    <button>ROMANCE</button>
+                    <button class="rounded p-8 m-1 text-light border-0">ROMANCE</button>
                 </nav>
             </section>
 
             <section class="categoria">
                 <nav class="animacao">
-                    <button>ANIMAÇÃO</button>
+                    <button class="rounded p-8 m-1 text-light border-0">ANIMAÇÃO</button>
                 </nav>
             </section>
 
             <section class="categoria">
                 <nav class="drama">
-                    <button>DRAMA</button>
+                    <button class="rounded p-8 m-1 text-light border-0">DRAMA</button>
                 </nav>
             </section>
 
             <section class="categoria">
                 <nav class="infantil">
-                    <button>INFANTIL</button>
+                    <button class="rounded p-8 m-1 text-light border-0">INFANTIL</button>
                 </nav>
             </section>
 
             <section class="categoria">
                 <nav class="terror">
-                    <button>TERROR</button>
+                    <button class="rounded p-8 m-1 text-light border-0">TERROR</button>
                 </nav>
             </section>
 
-            <br>
-
-            <section class="pesquisa">
-                <nav>
-                    <input type="texarea">
-                    <img src="lupa.png" width="20px" height="20px" class="lupa">
-                </nav>
-            </section>
-
-            <br>
     
             <section class="categoria">
                 <nav class="favoritos">
-                    <button>FAVORITOS</button>
+                    <button class="rounded p-8 m-1 text-light border-0">FAVORITOS</button>
                 </nav>
             </section>
 
@@ -222,7 +206,6 @@
     </aside>
 
     <!--Rodape-->
-
     <footer>
         Direitos protegidos por Gustavo Almeida
     </footer>
