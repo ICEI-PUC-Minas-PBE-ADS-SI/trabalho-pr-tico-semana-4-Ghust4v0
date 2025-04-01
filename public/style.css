@@ -1,3 +1,105 @@
-body {
-    background-color: aquamarine;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: steelblue;
+    width: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 70vw;
+    float: right;
+    display: block;
+    position: relative;
+    margin-right: 190px;
+}
+
+.acoes{
+    display: block;
+    position: absolute; 
+    top: 5%; right: 0%; 
+    transform: translate(-10%, -50%); 
+}
+
+.busca{
+    display: block;
+    position: absolute; 
+    top: 2%; left: 100%; 
+    transform: translate(-10%, -50%);  
+}
+
+.busca img{
+    display: block;
+    position: absolute; 
+    top: 13%; left: 173px; 
+    transform: translate(0%, 0%); 
+}
+
+article{
+    display: inline-block;
+    margin: 20px;
+    margin-top: 60px;
+    width: 20%;
+    height: 20%;
+}
+
+aside{
+    margin-top: 60px;
+    width: 30vw;
+    height: 100vh;
+    height: 100%;
+    
+}
+
+button{
+    background: #ffffff;
+    color: black;
+    border-radius: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.lupa:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.post img{
+    width: 100%;
+    height: 350px;
+}
+
+footer{
+    margin-top: 30%;
+}   
+
+aside button{
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.barralateral{
+    margin-left: 15px;
 }
