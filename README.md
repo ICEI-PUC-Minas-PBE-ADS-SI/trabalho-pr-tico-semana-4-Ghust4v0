@@ -8,15 +8,15 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Gustaavo Almeida Reis
+- Matricula: 1577200
+- Proposta de projeto escolhida: Site de Catálogo de Filmes
+- Breve descrição sobre seu projeto: Um site onde demonstra as novidades do cinema e os mais diversos filmes
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+<< ![alt text](css-puro.png)>>
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+<< ![alt text](bootstrap.png)>>
