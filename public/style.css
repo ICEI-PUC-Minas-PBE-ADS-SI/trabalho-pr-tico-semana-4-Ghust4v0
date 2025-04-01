@@ -5,18 +5,31 @@
     font-family: sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
+article img{
+    width: 100%;
+}
+
 header{
     background-color: steelblue;
     width: 100%;
 }
 
 main{
-    height: 100vh;
-    width: 70vw;
-    float: right;
-    display: block;
-    position: relative;
-    margin-right: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin-top: 10px;
+    float: right
+    ;
+}
+
+main > article{
+    margin: 5px;
+
 }
 
 .acoes{
@@ -29,7 +42,7 @@ main{
 .busca{
     display: block;
     position: absolute; 
-    top: 2%; left: 100%; 
+    top: 16%; left: 88%; 
     transform: translate(-10%, -50%);  
 }
 
@@ -39,23 +52,6 @@ main{
     top: 13%; left: 173px; 
     transform: translate(0%, 0%); 
 }
-
-article{
-    display: inline-block;
-    margin: 20px;
-    margin-top: 60px;
-    width: 20%;
-    height: 20%;
-}
-
-aside{
-    margin-top: 60px;
-    width: 30vw;
-    height: 100vh;
-    height: 100%;
-    
-}
-
 button{
     background: #ffffff;
     color: black;
@@ -84,7 +80,10 @@ button:hover{
 }
 
 footer{
-    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23%;
 }   
 
 aside button{
@@ -103,3 +102,100 @@ aside button{
 .barralateral{
     margin-left: 15px;
 }
+
+@media screen and (max-width: 480px) {
+
+   h1{
+    font-size: 20px;
+   }
+
+   h2{
+    font-size:15px ;
+   }
+   
+   aside{
+    position: fixed;
+    max-width: 15%;
+   }
+
+   aside input{
+        width: 20px;
+   }
+
+
+   aside button{
+    width: 80px;
+    padding: 4px;
+    font-size: 10px;
+    }
+
+    main{
+        margin-top: 20px;
+        margin: 2px;
+    }
+
+    .busca{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+    header{
+        display: fixed;
+    }
+
+    button{
+        width: 60px;
+        font-size: 10px;
+        padding: 3px;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+
+    h1{
+     font-size: 25px;
+    }
+ 
+    h2{
+     font-size:19px ;
+    }
+    
+    aside{
+     position: fixed;
+    }
+ 
+    aside input{
+         width: 20%;
+    }
+ 
+ 
+    aside button{
+     width: 120px;
+     }
+ 
+     main{
+         margin-top: 20px;
+     }
+ 
+     .busca input{
+         width: 50%;
+     }
+ 
+     footer{
+         display: none;
+     }
+ 
+     button{
+         width: 60px;
+         font-size: 13px;
+         padding: 5px;
+         margin: 0.5px;
+     }
+ 
+ }
+
